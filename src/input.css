@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .header-link {
+        @apply text-neutral-400 hover:text-black
+    }
+    .horizontal-space {
+        @apply mx-auto px-4
+    }
+    .news-title-light {
+        @apply text-sm text-neutral-400 hover:text-black
+    }
+    .news-title {
+        @apply hover:shadow-news
+    }
+
+    .sec-sub-title-light {
+        @apply text-sm text-neutral-400 hover:text-black
+    }
+    .sec-sub-title {
+        @apply block text-base md:text-2xl leading-7 mt-2
+    }
+
+    .svg-link {
+        @apply absolute inset-0 bg-black/25 hover:bg-transparent
+    }
+    .svg-img {
+        @apply w-6 object-cover
+    }
+
+    .logo-img {
+        @apply w-28
+    }
+
+    .footer-link {
+        @apply block w-fit text-footer border-b-2 border-black hover:border-[#334455]
+    }
+}
+
+@font-face {
+    font-family: "primary";
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/graphik-compact-medium.woff2') format("woff2")
+}
+
+@font-face {
+    font-family: "secondary";
+    font-style: normal;
+    font-weight: 500;
+    src: url('build/fonts/ibmplexmono-regular.ttf') format("woff2")
+}
