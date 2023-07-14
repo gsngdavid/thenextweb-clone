@@ -37,6 +37,10 @@
     .footer-link {
         @apply block w-fit text-footer border-b-2 border-black hover:border-[#334455]
     }
+
+    .no-scroll::-webkit-scrollbar {
+        @apply hidden
+    }
 }
 
 @font-face {
